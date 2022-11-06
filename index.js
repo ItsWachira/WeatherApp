@@ -7,7 +7,7 @@ weatherIcon = document.querySelector(".weather-part img");
 arrowBack = document.querySelector("header i");
 
 
-const API_KEY = "2434f642b76a8d347466d12c0e45829f";
+
 let API;
 
 
