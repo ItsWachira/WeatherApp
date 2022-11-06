@@ -6,49 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Weather App</title>
 </head>
 <body>
  <div class="wrapper">
     <header><i class="bx bx-left-arrow-alt"></i>Weather App</header>
     <section class="input-part">
-        <p class="info-txt">Enter the name of your city.</p>
-        <input type="text"  placeholder="Enter city name" spellcheck="false">
+        <p class="info-txt ">Please enter a valid city.</p>
+        <input type="text"  placeholder="Enter city name" spellcheck="false" required>
         <div class="separator"></div>
         <button class="btn">Get Device location</button>
     </section>
+    <section class="weather-part">
+        <img src="images/icons8-sun-64.png" alt="weather-icon">
+        <div class="temp">
+            <span class="numb">25</span>
+            <span class="degree">°</span>c
+        </div>
+        <div class="weather"> Sunny</div>
+        <div class="location">
+            <i class="bx bx-map"></i>
+            <span >Nairobi, Kenya</span>
+        </div>
+        <div class="bottom-details">
+
+            <div class="column feels">
+                <i class="bs bx-thermometer"></i>
+                <div class="details">
+                    <div class="temp">
+                        <span class="numb-2">20</span>
+                        <span class="degree">°</span>c
+                    </div>
+                    <p>Feel like</p>
+                </div>
+            </div>
+
+
+            <div class="column humidity">
+                <i class='bx bxs-droplet'></i>
+                <div class="details">
+                    <div class="temp">
+                        <span>84%</span>
+                       
+                    </div>
+                    <p>Humidity</p>
+                    </div>
+            </div>
+
+        </div>
+            
+
+    </section>
  </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="index.js"></script>
 </body>
